@@ -15,4 +15,4 @@
 
 const Ws = use('Ws')
 
-Ws.channel('posts', 'PostController')
+Ws.channel('posts', 'custom/PostController').middleware('auth')
